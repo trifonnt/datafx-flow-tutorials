@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <GridPane hgap="12.0" vgap="12.0" AnchorPane.bottomAnchor="52.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="12.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="NEVER" />
+                <ColumnConstraints hgrow="ALWAYS" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints vgrow="NEVER" />
+                <RowConstraints vgrow="NEVER" />
+                <RowConstraints vgrow="ALWAYS" />
+            </rowConstraints>
+            <children>
+                <Label text="Name:" />
+                <Label text="Profession:" GridPane.rowIndex="1" />
+                <TextField fx:id="professionField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Label fx:id="nameLabel" GridPane.columnIndex="1" />
+                <Label fx:id="resultLabel" textFill="#592be3" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                    <font>
+                        <Font name="System Bold" size="22.0" />
+                    </font>
+                </Label>
+            </children>
+        </GridPane>
+        <HBox alignment="CENTER_RIGHT" layoutX="-18.0" layoutY="92.0" spacing="12.0" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0">
+            <children>
+                <Button fx:id="clearButton" mnemonicParsing="false" text="clear" />
+                <Button fx:id="loadAButton" mnemonicParsing="false" text="load A" />
+                <Button fx:id="loadBButton" mnemonicParsing="false" text="load B" />
+                <Button fx:id="changeView" mnemonicParsing="false" text="change View" />
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>
